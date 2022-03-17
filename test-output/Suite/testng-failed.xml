@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.crm.CampaignTest.CreateCampaignWithProductTestNGTest">
+        <methods>
+          <include name="closeDb"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="launchTheBrowser"/>
+          <include name="connectionDataBase"/>
+          <include name="createCampaignWithProductTestNGTest"/>
+        </methods>
+      </class> <!-- com.crm.CampaignTest.CreateCampaignWithProductTestNGTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="2" name="Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.CampaignTest.CreateCampaignTestNGTest">
+        <methods>
+          <include name="closeDb"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="launchTheBrowser"/>
+          <include name="connectionDataBase"/>
+          <include name="createCampaignPOMTest"/>
+        </methods>
+      </class> <!-- com.crm.CampaignTest.CreateCampaignTestNGTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
